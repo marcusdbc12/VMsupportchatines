@@ -1,0 +1,110 @@
+2021-09-10 05:29:29,522 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-09-10 05:29:29,528 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 05:29:29,952 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 05:30:02,010 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-09-10 05:30:16,167 [INFO ]  Rasa server is up and running.
+2021-09-10 22:49:10,978 [INFO ]  Starting Rasa server on https://localhost:443
+2021-09-10 22:49:10,986 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:49:11,439 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:49:42,136 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-09-10 22:49:55,751 [INFO ]  Rasa server is up and running.
+2021-09-10 22:49:55,752 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/sanic/server.py", line 891, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1727, in create_server
+PermissionError: [Errno 13] error while attempting to bind on address ('0.0.0.0', 443): permission denied
+2021-09-10 22:51:01,882 [INFO ]  Starting Rasa server on https://localhost:5005
+2021-09-10 22:51:01,889 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:51:02,321 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:51:29,914 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/sanic/app.py", line 1130, in run
+    serve(**server_settings)
+  File "/opt/conda/lib/python3.7/site-packages/sanic/server.py", line 888, in serve
+    trigger_events(before_start, loop)
+  File "/opt/conda/lib/python3.7/site-packages/sanic/server.py", line 696, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1450, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1443, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1351, in uvloop.loop.Loop.run_forever
+  File "uvloop/loop.pyx", line 519, in uvloop.loop.Loop._run
+  File "uvloop/loop.pyx", line 436, in uvloop.loop.Loop._on_idle
+  File "uvloop/cbhandles.pyx", line 90, in uvloop.loop.Handle._run
+  File "uvloop/cbhandles.pyx", line 68, in uvloop.loop.Handle._run
+  File "/opt/conda/lib/python3.7/site-packages/rasa/core/run.py", line 269, in load_agent_on_start
+    action_endpoint=endpoints.action,
+  File "/opt/conda/lib/python3.7/site-packages/rasa/core/agent.py", line 361, in load_agent
+    remote_storage=remote_storage,
+  File "/opt/conda/lib/python3.7/site-packages/rasa/core/agent.py", line 950, in load_local_model
+    path_to_model_archive=model_archive,
+  File "/opt/conda/lib/python3.7/site-packages/rasa/core/agent.py", line 499, in load
+    if core_model
+  File "/opt/conda/lib/python3.7/site-packages/rasa/core/policies/ensemble.py", line 387, in load
+    policy = policy_cls.load(policy_path, **context)
+  File "/opt/conda/lib/python3.7/site-packages/rasa/core/policies/ted_policy.py", line 1037, in load
+    should_finetune,
+  File "/opt/conda/lib/python3.7/site-packages/rasa/core/policies/ted_policy.py", line 1082, in _load_tf_model
+    finetune_mode=should_finetune,
+  File "/opt/conda/lib/python3.7/site-packages/rasa/utils/tensorflow/models.py", line 424, in load
+    model.fit(data_generator, verbose=False)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/engine/training.py", line 103, in _method_wrapper
+    return method(self, *args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/rasa/utils/tensorflow/temp_keras_modules.py", line 191, in fit
+    tmp_logs = train_function(iterator)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/eager/def_function.py", line 780, in __call__
+    result = self._call(*args, **kwds)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/eager/def_function.py", line 840, in _call
+    return self._stateless_fn(*args, **kwds)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/eager/function.py", line 2829, in __call__
+    return graph_function._filtered_call(args, kwargs)  # pylint: disable=protected-access
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/eager/function.py", line 1848, in _filtered_call
+    cancellation_manager=cancellation_manager)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/eager/function.py", line 1924, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager))
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/eager/function.py", line 550, in call
+    ctx=ctx)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/eager/execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+KeyboardInterrupt
+2021-09-10 22:52:24,797 [INFO ]  Starting Rasa server on https://localhost:8443
+2021-09-10 22:52:24,805 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:52:25,238 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:52:56,124 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-09-10 22:53:09,966 [INFO ]  Rasa server is up and running.
+2021-09-10 22:56:59,978 [INFO ]  Starting Rasa server on https://localhost:443
+2021-09-10 22:56:59,985 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:57:00,427 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 22:57:31,377 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-09-10 22:57:45,258 [INFO ]  Rasa server is up and running.
+2021-09-10 22:57:45,259 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/sanic/server.py", line 891, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1727, in create_server
+PermissionError: [Errno 13] error while attempting to bind on address ('0.0.0.0', 443): permission denied
+2021-09-10 23:04:54,131 [INFO ]  Starting Rasa server on https://localhost:443
+2021-09-10 23:04:54,138 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 23:04:54,576 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 23:05:25,537 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-09-10 23:05:39,384 [INFO ]  Rasa server is up and running.
+2021-09-10 23:05:39,385 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/sanic/server.py", line 891, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1727, in create_server
+PermissionError: [Errno 13] error while attempting to bind on address ('0.0.0.0', 443): permission denied
+2021-09-10 23:06:23,156 [INFO ]  Starting Rasa server on https://localhost:443
+2021-09-10 23:06:23,162 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 23:06:23,587 [INFO ]  Loading model models/20210910-043847.tar.gz...
+2021-09-10 23:06:54,960 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-09-10 23:07:09,048 [INFO ]  Rasa server is up and running.
+2021-09-10 23:08:44,409 [ERROR]  Invalid response object for url b'/webhooks/telegram/webhook', Expected Type: HTTPResponse, Actual Type: <class 'NoneType'>
+2021-09-10 23:08:44,409 [ERROR]  Exception occurred while handling uri: 'https://34.127.34.220/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/sanic/server.py", line 509, in write_response
+    response.output(
+AttributeError: 'NoneType' object has no attribute 'output'

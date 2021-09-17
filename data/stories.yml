@@ -1,0 +1,276 @@
+version: "2.0"
+
+stories:
+
+- story: emacduplsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: emacdupl
+  - action: utter_emacdupl
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+  
+- story: emacduplsd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: emacdupl
+  - action: utter_emacdupl
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+  
+- story: hostredundancysa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostredundancy
+  - action: utter_hostredundancy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+  
+- story: hostredundancysd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostredundancy
+  - action: utter_hostredundancy
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+
+
+- story: issuepoweronvmsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuepoweronvm
+  - action: utter_issuepoweronvm
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuepoweronvmsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuepoweronvm
+  - action: utter_issuepoweronvm
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+  
+- story: issuedeletehostinvdssa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuedeletehostinvds
+  - action: utter_issuedeletehostinvds
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuedeletehostinvdssd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuedeletehostinvds
+  - action: utter_issuedeletehostinvds
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+  
+- story: issuehostvdsvcentersa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuehostvdsvcenter
+  - action: utter_issuehostvdsvcenter
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuehostvdsvcentersd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuehostvdsvcenter
+  - action: utter_issuehostvdsvcenter
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+  
+- story: issuevmchangeouplinksa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuevmchangeouplink
+  - action: utter_issuevmchangeouplink
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuevmchangeouplinksd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuevmchangeouplink
+  - action: utter_issuevmchangeouplink
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+  
+- story: issueaddphyvdssiocsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issueaddphyvdssioc
+  - action: utter_issueaddphyvdssioc
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issueaddphyvdssiocsd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issueaddphyvdssioc
+  - action: utter_issueaddphyvdssioc
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+
+- story: issuemacchsriovsd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuemacchsriov
+  - action: utter_issuemacchsriov
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuemacchsriovsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuemacchsriov
+  - action: utter_issuemacchsriov
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+
+- story: issuevmdosvpnsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuevmdosvpn
+  - action: utter_issuevmdosvpn
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuevmdosvpnsd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuevmdosvpn
+  - action: utter_issuevmdosvpn
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+  
+- story: issuelowperfudpsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuelowperfudp
+  - action: utter_issuelowperfudp
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuelowperfudpsd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuelowperfudp
+  - action: utter_issuelowperfudp
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+
+- story: issueconnectbvmssa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issueconnectbvms
+  - action: utter_issueconnectbvms
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issueconnectbvmssd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issueconnectbvms
+  - action: utter_issueconnectbvms
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+
+- story: issuepoweronvappsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuepoweronvapp
+  - action: utter_issuepoweronvapp
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuepoweronvappsd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuepoweronvapp
+  - action: utter_issuepoweronvapp
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+  
+- story: issuerollbackconfnetsa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuerollbackconfnet
+  - action: utter_issuerollbackconfnet
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: issuerollbackconfnetsd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: issuerollbackconfnet
+  - action: utter_issuerollbackconfnet
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_restart
+

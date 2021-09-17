@@ -1,0 +1,167 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hola
+    - Buenos dias
+    - Buenas tardes
+    - Buenas noches 
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - adios
+    - hasta la vista baby
+    - hastaluego
+    - una buena noche
+    - un buen dia
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - si
+    - s
+    - si, por favor
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - de ninguna manera
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: emacdupl
+  examples: |
+    - Tengo problemas de conexión y pérdida de paquetes en mis máquinas virtuales.
+    - Veo que mi vm tiene MAC duplicadas
+    - Las máquinas virtuales de mi infraestructura tienen pérdidas.
+    - Una VM muestra tiene errores de conexión 
+    - Observo muchas desconexiones en el sistema Guests
+    - Mi cliente final está observando problemas de conexión en las máquinas virtuales.
+
+- intent: hostredundancy
+  examples: |
+    - Tengo la pérdida de redundancia del uplink de un host
+    - Tengo la pérdida de redundancia del vinculo superior de un host
+    - Tengo una alarma de redundancia en el uplink del host.
+    - El uplink del host me aparece alertado.
+    
+- intent: issuepoweronvm
+  examples: |
+    - Tengo problemas para encender una máquina virtual por mac duplicada.
+    - Veo que mi vm no enciende por MAC duplicadas
+    - Las máquinas virtuales de mi infraestructura no se encienden por mac duplicada.
+    - Una VM no se enciende por mac duplicada
+    - Observo muchas máquinas que no se encienden por mac duplicada
+    - Mi cliente final está observando problemas de encendido en vms por mac duplicada.
+
+- intent: issuedeletehostinvds
+  examples: |
+    - Tengo problemas para borrar un host del vds
+    - Tengo problemas para borrar un host del vsphere distributed switch
+    - Veo que mi host no puede ser removido del switch distribuido
+    - Observo que un servidor no puede ser removido del switch distribuido
+    
+- intent: issuehostvdsvcenter
+  examples: |
+    - Tengo problemas de conexión entre mi host con vds y vcenter 
+    - Tengo problemas de conexión entre mi host con vsphere distributed switch y vcenter 
+    - Mi host ESX no puede conectarse a Vcenter posterior a la configuraciñon de un grupo de puertos
+    - Se pierde la conectidad entre mi host y vcenter.
+
+- intent: issuevmchangeouplink
+  examples: |
+    - Tengo problemas de conexión posterior a cambiar el orden de uplinks de en el vds.
+    - Tengo problemas de conexión posterior a cambiar el orden de vinculos superiores de en el vsphere distributed switch.
+    - Necesito soporte por desconexiones en máquinas virtuales posterior al cambio de orden de uplinks en vds
+    - Necesito soporte por desconexiones en máquinas virtuales posterior al cambio de orden de vinculos superiores de en el vsphere distributed switch
+    - Me ayudan, debido a que tengo problemas de desconexiones de vms posterior a la edición del orden de uplinks
+    - Me ayudan, debido a que tengo problemas de desconexiones de vms posterior a la edición del orden de vinculos superiores.
+
+- intent: issueaddphyvdssioc
+  examples: |
+    - Tengo problemas para agregar un nuevo adaptador a mi vds porque tiene activado io control
+    - Tengo problemas para agregar un nuevo adaptador a mi vpshere distributed switch porque tiene activado io control
+    - Me ayuda con soporte para agregar un adaptador físico a vds posterior a su activación de io control
+    - Me ayuda con soporte para agregar un adaptador físico a vsphere distributed switch posterior a su activación de io control
+    - Posterior a la activación de io control, no puedo agregar un nuevo adaptador a mi vds
+    - Posterior a la activación de io control, no puedo agregar un nuevo adaptador a mi vpshere distributed switch
+    
+- intent: issuemacchsriov
+  examples: |
+    - Tengo problemas de conexión despues de cambiar la mac address de una vm que tenía sr-iov activado.
+    - Tengo problemas de desconexión despues de cambiar mac en vms con configuracion de sr-iov
+    - Necesito soporte para reparar desconexiones de máquinas virtuales posterior a cambiar su mac con sr-iov
+    - Posterior al cambio de una mac en el sistema operativo invitado tengo desconexiones.
+    
+- intent: issuevmdosvpn
+  examples: |
+    - Una máquina virtual con un cliente de VPN ha causado una denegación de servicios en el host.
+    - Una vm con un cliente de VPN ha causado un DOS en el host.
+    - Una maquina con un cliente de VPN causa la desconexión de varias máquinas virtuales.
+    - Posterior a la configuración de un cliente de vpn en una maquina virtual, se observa el aislamiento del hosts.
+    
+- intent: issuelowperfudp
+  examples: |
+    - Tengo problemas de bajo procesamiento de paquetes udp en mis maquinas virtuales.
+    - Tengo problemas de bajo procesamiento de paquetes udp en mis vms
+    - Mis vms muestran bajo procesamiento udp.
+    - Tengo problemas, ya que mis vms no pueden procesar muchos paquetes udp
+    - Tengo problemas, ya que mis maquinas virtuales no pueden procesar una gran cantidad de paquetes udp 
+    
+- intent: issueconnectbvms
+  examples: |
+    - Tengo problemas de conexión con mis vms que no se pueden comunicar entre si, aunque estan en el mismo grupo de puertos
+    - Las vms no se pueden comunicar entre si, a pesar de estar en el mismo grupo de puertos
+    - Las maquinas virtuales no se pueden comunicar entre si, a pesar de estar en el mismo grupo de puertos distribuidos
+    - No se tiene conexión entre vms del mismo grupo de puertos en diferentes hosts 
+    - Mis máquinas virtuales no pueden comunicarse entre si, a pesar de estar en el mismo grupo de puertos.
+    - Mis maquina no pueden comunicarse entre ellas
+    
+- intent: issuepoweronvapp
+  examples: |
+    - Posterior a una migración, no se puede encender una vapp con el mensaje de no tiene perfil de protocolo de red asociado
+    - Una maquina virtual no se enciende con el mensaje de no tener el perfil de protocolo de red asociado
+    - Tengo una vm que no enciende con el mensaje, no tiene perfil de protocolo de red asociado.
+    - Posterior a un mantenimiento programacion, una vapp no enciende con el mensaje de no tiene perfil de red asociado
+    
+- intent: issuerollbackconfnet
+  examples: |
+    - Tengo un problema extraño, donde la configuración de red se revierte y un host se desconecta de vcenter.
+    - Posterior a una configuración de red, esta se revierte y se desconecta el host de vcenter
+    - 
+
+
+
+
+
+
+

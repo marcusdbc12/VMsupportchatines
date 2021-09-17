@@ -1,0 +1,81 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- emacdupl:
+    use_entities: true
+- hostredundancy:
+    use_entities: true
+- issuepoweronvm:
+    use_entities: true
+- issuedeletehostinvds:
+    use_entities: true
+- issuehostvdsvcenter:
+    use_entities: true
+- issuevmchangeouplink:
+    use_entities: true
+- issueaddphyvdssioc:
+    use_entities: true
+- issuemacchsriov:
+    use_entities: true
+- issuevmdosvpn:
+    use_entities: true
+- issuelowperfudp:
+    use_entities: true
+- issueconnectbvms:
+    use_entities: true
+- issuepoweronvapp:
+    use_entities: true
+- issuerollbackconfnet:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hola, Te saluda vmsupportbot y estoy encargado del soporte Nivel 1 de Vmware Vsphere 7 en adelante. ¿Me podrías decir cuál es el problema que presentas?
+  utter_did_that_help:
+  - text: ¿La documentación fue de ayuda?
+  utter_goodbye:
+  - text: Excelente, Ha sido un placer trabajar contigo! hasta la próxima
+  utter_restart:
+  - text: Lo siento mucho, si deseas reiniciar el proceso de comunicación, escribe un hola, o si es tu tercer intento contacta por favor con la central telefónica de soporte.
+  utter_emacdupl:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-8D7D0126-8E8A-470F-A61E-4197EE32D08F.html'
+  utter_hostredundancy:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-511D60CA-5AE2-427F-9DDB-CCEAFA2FE373.html'
+  utter_issuepoweronvm:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-7F723748-E7B8-48B9-A773-3822C514684B.html'
+  utter_issuedeletehostinvds:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-038AC93F-D710-48ED-8E3B-258A23FB2930.html'
+  utter_issuehostvdsvcenter:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-7E9AF536-F1DB-4AD5-9C9F-413845EE26BC.html'
+  utter_issuevmchangeouplink:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-437CA0A2-CB4C-4CF6-B019-4C17FCC8EECC.html'
+  utter_issueaddphyvdssioc:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-13EA5047-CF81-472D-AAAA-98745A914126.html'
+  utter_issuemacchsriov:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-AD78A7BD-29A2-40F6-B707-B3C0B4C2C873.html'
+  utter_issuevmdosvpn:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-4FBD6572-D549-4C37-A49D-BBBC6BEA42F2.html'
+  utter_issuelowperfudp:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-F07634C7-4D90-4EFD-841F-8743F5DF36BF.html'
+  utter_issueconnectbvms:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-5324A0E4-AA7B-40CC-A975-D45328B5C434.html'
+  utter_issuepoweronvapp:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-F77F4B52-E84E-43BE-8A99-19F0AF557607.html'
+  utter_issuerollbackconfnet:
+  - text: 'La documentación de Vmware nos menciona lo siguiente: https://docs.vmware.com/es/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-80FF68D1-3740-40F3-9A33-CDCF9A155975.html'
+actions: []
+forms: {}
+e2e_actions: []
